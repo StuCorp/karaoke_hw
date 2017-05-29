@@ -22,7 +22,6 @@ def setup()
   @karaoke_machine_1 = KaraokeMachine.new([@humble, @vats, @too_good])
 
   @funk_room = Room.new("Funk in drublic", 2, @karaoke_machine_1)
-
 end
 
 def test_room_get_name()

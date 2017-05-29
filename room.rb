@@ -15,6 +15,11 @@ def get_guests()
   return @guests
 end
 
+def get_karaoke_machine()
+  return @karaoke_machine
+  
+end
+
 # def guest_numbers()
 #   return @guests.count()  
 # end
@@ -22,6 +27,7 @@ end
 def add_guest(guest)
   if @guests.count < @capacity
     @guests << guest
+    guest.set_in_room(true)
   else
     return "Room full"
   end
